@@ -1,4 +1,4 @@
-require "tnql/version"
+require 'tnql/version'
 
 module Tnql
   # Your code goes here...
