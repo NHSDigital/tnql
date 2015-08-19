@@ -1,0 +1,54 @@
+grammar Tnql
+  include Tnql::Dates
+  include Tnql::Diagnosis
+  include Tnql::EBaseRecords
+  include Tnql::BatchTypes
+  include Tnql::Provider
+  include Tnql::RegistrationStatus
+  include Tnql::Registry
+  include Tnql::Staging
+  include Tnql::Treatment
+  include Tnql::TumourType
+  include Tnql::Patient
+  include Tnql::VitalStatus
+  include Tnql::Age
+
+  # The root grammar
+  rule query
+    quantity:record_count? pre:preconditions* tumours_keyword post:additional_conditions*
+  end
+
+  rule word_break
+    !(!(' '/',') .)
+  end
+
+  rule space
+    ' '+
+  end
+
+  rule number
+    [0-9]+
+  end
+
+  rule record_count
+    all_keyword
+    /
+    'first' space number <Tnql::Nodes::RecordCountNode>
+  end
+
+  rule all_keyword
+     'all' word_break
+  end
+
+  rule tumours_keyword
+     space 'tumours' word_break
+  end
+
+  rule preconditions
+    registration_status / registry / behaviour / stage / tumour_type
+  end
+
+  rule additional_conditions
+    diagnosis / treatment / with_clause / for_patients_clause
+  end
+end

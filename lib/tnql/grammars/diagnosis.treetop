@@ -1,0 +1,23 @@
+module Tnql
+  grammar Diagnosis
+    rule diagnosis
+      diagnosed_keyword conditions:diagnosis_conditions+
+    end
+
+    rule diagnosed_keyword
+      space 'diagnosed' word_break
+    end
+
+    rule diagnosis_conditions
+      diagnosisdate_range / diagnosisdate_detail / diagnosis_provider
+    end
+
+    rule diagnosisdate_range
+      space 'between' space start:date_fragment space 'and' space finish:date_fragment <Tnql::Nodes::DiagnosisDateRangeNode>
+    end
+
+    rule diagnosisdate_detail
+      space ('in' / 'on') space date_fragment <Tnql::Nodes::DiagnosisDetailNode>
+    end
+  end
+end

@@ -1,0 +1,21 @@
+module Tnql
+  grammar Provider
+    # TODO: move diagnosis_provider logic to diagnosis.treetop and clean up the provider logic so it works for
+    # treatments (extracting diagnosis specific logic i.e. tumour.eventid from provider_name and provider_code).
+    rule diagnosis_provider
+      space 'at' space provider:(provider_code / provider_name)
+    end
+
+    rule provider_name
+      name:(!(space provider_type) .)+ space provider_type <Tnql::Nodes::ProviderNameNode>
+    end
+
+    rule provider_code
+      provider_type space code:(!' ' .)+ <Tnql::Nodes::ProviderCodeNode>
+    end
+
+    rule provider_type
+      'hospital' / 'cancer network'
+    end
+  end
+end

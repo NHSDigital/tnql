@@ -1,0 +1,54 @@
+module Tnql
+  grammar TumourType
+    rule behaviour
+      space behaviour_detail word_break
+    end
+
+    rule behaviour_detail
+      ('behaviour' space number / 'noninvasive' / 'non-invasive' / 'invasive' / 'metastatic') <Tnql::Nodes::BehaviourDetailNode>
+    end
+
+    rule tumour_type
+      space (site_group / names_type / sites) word_break
+    end
+
+    rule site_group
+      ('brain' / 'breast' / 'endocrine' / 'gynaecological'
+      / 'haematological' / 'head' space 'and' space 'neck'
+      / 'lower' space 'gi' / 'lung' / 'other' / 'sarcoma'
+      / 'skin' / 'upper' space 'gi' / 'urological') <Tnql::Nodes::SiteGroupNode>
+    end
+
+    rule names_type
+      ( melanoma / non_melanoma ) word_break
+    end
+
+    rule melanoma
+      'melanoma' <Tnql::Nodes::MelanomaNode>
+    end
+
+    rule non_melanoma
+      ('nmsc' / 'non-melanoma' / 'non' space 'melanoma') <Tnql::Nodes::NonMelanomaNode>
+    end
+
+    rule sites
+      first:site rest:more_sites* <Tnql::Nodes::SitesNode>
+    end
+
+    rule more_sites
+      ','? space? ('and' space)? site <Tnql::Nodes::AdditionalSiteNode>
+    end
+
+    rule site
+      (icd_site / snomed_site) <Tnql::Nodes::SingleSiteNode>
+    end
+
+    rule icd_site
+      [cd] [0-9] [0-9] '.'? [0-9]?
+    end
+
+    rule snomed_site
+      't' [0-9fxy] [0-9fxy] [0-9fxy]? [0-9fxy]? [0-9y]?
+    end
+  end
+end

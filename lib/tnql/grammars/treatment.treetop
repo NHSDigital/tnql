@@ -1,0 +1,35 @@
+module Tnql
+  grammar Treatment
+    rule treatment
+      treated_keyword conditions:treatment_conditions+
+    end
+
+    rule treated_keyword
+      space 'treated' word_break
+    end
+
+    rule treatment_conditions
+      treatmentdate_range / treatmentdate_detail / treatment_provider
+    end
+
+    rule treatmentdate_range
+      space 'between' space start:date_fragment space 'and' space finish:date_fragment <Tnql::Nodes::TreatmentDateRangeNode>
+    end
+
+    rule treatmentdate_detail
+      space ('in' / 'on') space date_fragment <Tnql::Nodes::TreatmentPreciseDateNode>
+    end
+
+    rule treatment_provider
+      space 'at' space provider:(treatment_provider_code / treatment_provider_name)
+    end
+
+    rule treatment_provider_name
+      (!(space provider_type) .)+ space provider_type <Tnql::Nodes::TreatmentProviderNameNode>
+    end
+
+    rule treatment_provider_code
+      provider_type space code:(!' ' .)+ <Tnql::Nodes::TreatmentProviderCodeNode>
+    end
+  end
+end

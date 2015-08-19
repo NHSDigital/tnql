@@ -1,0 +1,23 @@
+module Tnql
+  grammar Staging
+    rule stage
+      space stage_detail word_break
+    end
+
+    rule stage_detail
+      ('stage' space stages:stage_value* / 'unstaged' / 'valid stage') <Tnql::Nodes::StageDetailNode>
+    end
+
+    rule stage_value
+      number / unstageable / insufficient_info
+    end
+
+    rule unstageable
+      'u'
+    end
+
+    rule insufficient_info
+      '?'
+    end
+  end
+end

@@ -1,0 +1,86 @@
+module Tnql
+  grammar EBaseRecords
+    rule with_clause
+      with_keyword action_or_ebr
+    end
+
+    rule action_or_ebr
+      action_and_ebr / actions / e_base_records
+    end
+
+    rule action_and_ebr
+      actions and_keyword e_base_records
+    end
+
+    rule e_base_records
+      unprocessed_keyword types:batch_types? records_keyword <Tnql::Nodes::EBaseRecordsNode>
+    end
+
+    rule batch_types
+      space allowed_types word_break <Tnql::Nodes::BatchTypesNode>
+    end
+
+    rule allowed_types
+      batch_type types:more_types* <Tnql::Nodes::AllowedTypesNode>
+    end
+
+    rule more_types
+      ','? space? ('or' space)? batch_type <Tnql::Nodes::MoreTypesNode>
+    end
+
+    rule with_keyword
+      space 'with' word_break
+    end
+
+    rule actions
+      action_type action_keyword action_provider? <Tnql::Nodes::ActionsNode>
+    end
+
+    rule action_provider
+      space 'at' space provider:(action_provider_code / action_provider_name)
+    end
+
+    rule action_type
+      space accepted_action word_break
+    end
+
+    rule accepted_action
+     'pathl' / 'patho' / 'wait' / 'proforma' / 'transfer' / 'notes' / 'child' /
+      'qa' / 'staged' / 'tag' / 'qc' / 'query' / 'stage' / 'searchforstaging' /
+      'moreinfo' / 'search' / 'check' / 'gpsearch'
+    end
+
+    rule action_keyword
+      space 'action' word_break
+    end
+
+    rule at_keyword
+      space 'at' word_break
+    end
+
+    rule action_provider_code
+      provider_type space code:(!' ' .)+ <Tnql::Nodes::ActionProviderCodeNode>
+    end
+
+    rule action_provider_name
+      short_desc:(!(space provider_type) .)+ space provider_type <Tnql::Nodes::ActionProviderNameNode>
+    end
+
+    # TODO: support cancer network?
+    rule provider_type
+      'hospital'
+    end
+
+    rule unprocessed_keyword
+      space 'unprocessed' word_break
+    end
+
+    rule records_keyword
+      space 'records' word_break
+    end
+
+    rule and_keyword
+      space 'and' word_break
+    end
+  end
+end

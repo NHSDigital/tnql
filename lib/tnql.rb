@@ -1,5 +1,4 @@
-require 'tnql/version'
+require 'active_support/time'
 
-module Tnql
-  # Your code goes here...
-end
+require 'tnql/version'
+require 'tnql/parser'

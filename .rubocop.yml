@@ -1,6 +1,6 @@
 # By default, would enforce { key: value } rather than { :key => value }.
 AllCops:
-  RunRailsCops: true
+  RunRailsCops: false
 
 # Multi-line method chaining should be done with trailing dots.
 Style/DotPosition:
@@ -19,3 +19,12 @@ Lambda:
 # ...
 LineLength:
   Max: 99
+
+# Relax some of the cops for tests
+Metrics/ClassLength: &exclude_tests
+  Exclude:
+    - test/**/*.rb
+Metrics/MethodLength: *exclude_tests
+Style/ClassAndModuleChildren: *exclude_tests
+Style/Documentation: *exclude_tests
+Style/NumericLiterals: *exclude_tests

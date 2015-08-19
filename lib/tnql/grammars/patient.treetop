@@ -1,0 +1,39 @@
+module Tnql
+  grammar Patient
+    rule for_patients_clause
+      for_keyword pre:patient_pre_classifiers* patient_keyword post:more_patient_filters?
+    end
+
+    rule patient_keyword
+      space 'patients' word_break
+    end
+
+    rule patient_pre_classifiers
+      dead_or_alive / gender / age_group
+    end
+
+    rule more_patient_filters
+      who_keyword first:patient_post_classifier rest:more_post_classifiers*
+    end
+
+    rule patient_post_classifier
+      with_age_at_diagnosis / with_death_date / with_birth_date / death_certificate
+    end
+
+    rule more_post_classifiers
+      (',' and_keyword / and_keyword / ',' )? patient_post_classifier
+    end
+
+    rule gender
+      space gender:('male' / 'female') word_break <Tnql::Nodes::GenderNode>
+    end
+
+    rule who_keyword
+      space 'who' word_break
+    end
+
+    rule for_keyword
+      space 'for' word_break
+    end
+  end
+end

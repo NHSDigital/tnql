@@ -1,0 +1,65 @@
+module Tnql
+  grammar BatchTypes
+    rule batch_type
+      (nogca / nbocap / lucada / uhaem / ccm /
+      cosd_mdt / cosd_xml / usom / upath / upas /
+      ucwt / ucd / uncd / uextreg) <Tnql::Nodes::BatchTypeNode>
+    end
+
+    rule nogca
+      'nogca'
+    end
+
+    rule nbocap
+      'nbocap'
+    end
+
+    rule lucada
+      'lucada'
+    end
+
+    rule uhaem
+      'uhaem'
+    end
+
+    rule ccm
+      'ccm'
+    end
+
+    rule cosd_mdt
+      'cosd_mdt'
+    end
+
+    rule cosd_xml
+      'cosd_xml'
+    end
+
+    rule usom
+      ('somerset' / 'usom' / 'som' / 'scr') <Tnql::Nodes::USomNode>
+    end
+
+    rule upath
+      ('upath' / 'path') <Tnql::Nodes::UPathNode>
+    end
+
+    rule upas
+      ('upas' / 'pas' / 'pbr') <Tnql::Nodes::UPasNode>
+    end
+
+    rule ucwt
+      (('cancer' space 'wait') / 'uwct' / 'cwt') <Tnql::Nodes::UCwtNode>
+    end
+
+    rule ucd
+      (('death' space 'card') / 'death' / 'ucd') <Tnql::Nodes::UCdNode>
+    end
+
+    rule uncd
+      ('uncd' / 'ncd') <Tnql::Nodes::UNcdNode>
+    end
+
+    rule uextreg
+      ('extraregional' / 'uextreg') <Tnql::Nodes::UExtregNode>
+    end
+  end
+end
