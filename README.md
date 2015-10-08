@@ -64,8 +64,9 @@ PLEASE NOTE: A side-effect of decoupling TNQL from the NCRS SQL adapter is that 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/PublicHealthEngland/tnql. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/PublicHealthEngland/tnql.
 
+This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 

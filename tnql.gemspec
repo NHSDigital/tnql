@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'Tumour Natural Query Language'
   spec.description   = 'Domain Specific Language for querying PHE NCRS datastores'
-  spec.homepage      = ''
+  spec.homepage      = 'https://github.com/PublicHealthEngland/tnql'
   spec.license       = 'MIT'
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
