@@ -1,11 +1,11 @@
 module Tnql
   grammar RegistrationStatus
     rule registration_status
-      space? status_keyword more_statuses:(','? space? ('and' space)?  status_keyword)* <Tnql::Nodes::RegistrationStatusNode>
+      space? status_keyword more_statuses:(','? space? ('and' space)?  status_keyword)* <Nodes::RegistrationStatusNode>
     end
 
     rule status_keyword
-      ('final' / 'provisional' / 'referenced' / 'treatment' space 'only') <Tnql::Nodes::StatusKeywordNode>
+      ('final' / 'provisional' / 'referenced' / 'treatment' space 'only') <Nodes::StatusKeywordNode>
     end
   end
 end

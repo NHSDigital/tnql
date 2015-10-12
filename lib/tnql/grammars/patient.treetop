@@ -25,7 +25,7 @@ module Tnql
     end
 
     rule gender
-      space gender:('male' / 'female') word_break <Tnql::Nodes::GenderNode>
+      space gender:('male' / 'female') word_break <Nodes::GenderNode>
     end
 
     rule who_keyword

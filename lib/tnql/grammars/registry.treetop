@@ -1,15 +1,15 @@
 module Tnql
   grammar Registry
     rule registry
-      space registry:(registry_code / registry_abbr) <Tnql::Nodes::RegistryNode>
+      space registry:(registry_code / registry_abbr) <Nodes::RegistryNode>
     end
 
     rule registry_code
-      'y' [0-9] 4..4 <Tnql::Nodes::RegistryCodeNode>
+      'y' [0-9] 4..4 <Nodes::RegistryCodeNode>
     end
 
     rule registry_abbr
-      ('nycris' / 'trent' / 'ecric' / 'thames' / 'oxford' / 'ociu' / 'swcis' / 'wmciu' / 'nwcis') <Tnql::Nodes::RegistryAbbrNode>
+      ('nycris' / 'trent' / 'ecric' / 'thames' / 'oxford' / 'ociu' / 'swcis' / 'wmciu' / 'nwcis') <Nodes::RegistryAbbrNode>
     end
   end
 end

@@ -1,17 +1,17 @@
 grammar Tnql
-  include Tnql::Dates
-  include Tnql::Diagnosis
-  include Tnql::EBaseRecords
-  include Tnql::BatchTypes
-  include Tnql::Provider
-  include Tnql::RegistrationStatus
-  include Tnql::Registry
-  include Tnql::Staging
-  include Tnql::Treatment
-  include Tnql::TumourType
-  include Tnql::Patient
-  include Tnql::VitalStatus
-  include Tnql::Age
+  include Dates
+  include Diagnosis
+  include EBaseRecords
+  include BatchTypes
+  include Provider
+  include RegistrationStatus
+  include Registry
+  include Staging
+  include Treatment
+  include TumourType
+  include Patient
+  include VitalStatus
+  include Age
 
   # The root grammar
   rule query
@@ -33,7 +33,7 @@ grammar Tnql
   rule record_count
     all_keyword
     /
-    'first' space number <Tnql::Nodes::RecordCountNode>
+    'first' space number <Nodes::RecordCountNode>
   end
 
   rule all_keyword

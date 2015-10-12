@@ -3,7 +3,7 @@ module Tnql
     rule batch_type
       (nogca / nbocap / lucada / uhaem / ccm /
       cosd_mdt / cosd_xml / usom / upath / upas /
-      ucwt / ucd / uncd / uextreg) <Tnql::Nodes::BatchTypeNode>
+      ucwt / ucd / uncd / uextreg) <Nodes::BatchTypeNode>
     end
 
     rule nogca
@@ -35,31 +35,31 @@ module Tnql
     end
 
     rule usom
-      ('somerset' / 'usom' / 'som' / 'scr') <Tnql::Nodes::USomNode>
+      ('somerset' / 'usom' / 'som' / 'scr') <Nodes::USomNode>
     end
 
     rule upath
-      ('upath' / 'path') <Tnql::Nodes::UPathNode>
+      ('upath' / 'path') <Nodes::UPathNode>
     end
 
     rule upas
-      ('upas' / 'pas' / 'pbr') <Tnql::Nodes::UPasNode>
+      ('upas' / 'pas' / 'pbr') <Nodes::UPasNode>
     end
 
     rule ucwt
-      (('cancer' space 'wait') / 'uwct' / 'cwt') <Tnql::Nodes::UCwtNode>
+      (('cancer' space 'wait') / 'uwct' / 'cwt') <Nodes::UCwtNode>
     end
 
     rule ucd
-      (('death' space 'card') / 'death' / 'ucd') <Tnql::Nodes::UCdNode>
+      (('death' space 'card') / 'death' / 'ucd') <Nodes::UCdNode>
     end
 
     rule uncd
-      ('uncd' / 'ncd') <Tnql::Nodes::UNcdNode>
+      ('uncd' / 'ncd') <Nodes::UNcdNode>
     end
 
     rule uextreg
-      ('extraregional' / 'uextreg') <Tnql::Nodes::UExtregNode>
+      ('extraregional' / 'uextreg') <Nodes::UExtregNode>
     end
   end
 end

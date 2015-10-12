@@ -13,19 +13,19 @@ module Tnql
     end
 
     rule e_base_records
-      unprocessed_keyword types:batch_types? records_keyword <Tnql::Nodes::EBaseRecordsNode>
+      unprocessed_keyword types:batch_types? records_keyword <Nodes::EBaseRecordsNode>
     end
 
     rule batch_types
-      space allowed_types word_break <Tnql::Nodes::BatchTypesNode>
+      space allowed_types word_break <Nodes::BatchTypesNode>
     end
 
     rule allowed_types
-      batch_type types:more_types* <Tnql::Nodes::AllowedTypesNode>
+      batch_type types:more_types* <Nodes::AllowedTypesNode>
     end
 
     rule more_types
-      ','? space? ('or' space)? batch_type <Tnql::Nodes::MoreTypesNode>
+      ','? space? ('or' space)? batch_type <Nodes::MoreTypesNode>
     end
 
     rule with_keyword
@@ -33,7 +33,7 @@ module Tnql
     end
 
     rule actions
-      action_type action_keyword action_provider? <Tnql::Nodes::ActionsNode>
+      action_type action_keyword action_provider? <Nodes::ActionsNode>
     end
 
     rule action_provider
@@ -59,11 +59,11 @@ module Tnql
     end
 
     rule action_provider_code
-      provider_type space code:(!' ' .)+ <Tnql::Nodes::ActionProviderCodeNode>
+      provider_type space code:(!' ' .)+ <Nodes::ActionProviderCodeNode>
     end
 
     rule action_provider_name
-      short_desc:(!(space provider_type) .)+ space provider_type <Tnql::Nodes::ActionProviderNameNode>
+      short_desc:(!(space provider_type) .)+ space provider_type <Nodes::ActionProviderNameNode>
     end
 
     # TODO: support cancer network?

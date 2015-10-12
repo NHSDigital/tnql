@@ -7,11 +7,11 @@ module Tnql
     end
 
     rule provider_name
-      name:(!(space provider_type) .)+ space provider_type <Tnql::Nodes::ProviderNameNode>
+      name:(!(space provider_type) .)+ space provider_type <Nodes::ProviderNameNode>
     end
 
     rule provider_code
-      provider_type space code:(!' ' .)+ <Tnql::Nodes::ProviderCodeNode>
+      provider_type space code:(!' ' .)+ <Nodes::ProviderCodeNode>
     end
 
     rule provider_type

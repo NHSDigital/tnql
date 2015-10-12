@@ -5,7 +5,7 @@ module Tnql
     end
 
     rule stage_detail
-      ('stage' space stages:stage_value* / 'unstaged' / 'valid stage') <Tnql::Nodes::StageDetailNode>
+      ('stage' space stages:stage_value* / 'unstaged' / 'valid stage') <Nodes::StageDetailNode>
     end
 
     rule stage_value

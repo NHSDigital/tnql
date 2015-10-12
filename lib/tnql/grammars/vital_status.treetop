@@ -1,11 +1,11 @@
 module Tnql
   grammar VitalStatus
     rule dead_or_alive
-      space vital_status:('dead' / 'alive') word_break <Tnql::Nodes::DeadOrAliveNode>
+      space vital_status:('dead' / 'alive') word_break <Nodes::DeadOrAliveNode>
     end
 
     rule death_certificate
-      have_keyword space modifier:('no' / 'a') death_certificate_keywords <Tnql::Nodes::DeathCertificateNode>
+      have_keyword space modifier:('no' / 'a') death_certificate_keywords <Nodes::DeathCertificateNode>
     end
 
     rule death_certificate_keywords

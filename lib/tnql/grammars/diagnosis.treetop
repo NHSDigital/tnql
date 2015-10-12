@@ -13,11 +13,11 @@ module Tnql
     end
 
     rule diagnosisdate_range
-      space 'between' space start:date_fragment space 'and' space finish:date_fragment <Tnql::Nodes::DiagnosisDateRangeNode>
+      space 'between' space start:date_fragment space 'and' space finish:date_fragment <Nodes::DiagnosisDateRangeNode>
     end
 
     rule diagnosisdate_detail
-      space ('in' / 'on') space date_fragment <Tnql::Nodes::DiagnosisDetailNode>
+      space ('in' / 'on') space date_fragment <Nodes::DiagnosisDetailNode>
     end
   end
 end

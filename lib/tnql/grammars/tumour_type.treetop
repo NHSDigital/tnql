@@ -5,7 +5,7 @@ module Tnql
     end
 
     rule behaviour_detail
-      ('behaviour' space number / 'noninvasive' / 'non-invasive' / 'invasive' / 'metastatic') <Tnql::Nodes::BehaviourDetailNode>
+      ('behaviour' space number / 'noninvasive' / 'non-invasive' / 'invasive' / 'metastatic') <Nodes::BehaviourDetailNode>
     end
 
     rule tumour_type
@@ -16,7 +16,7 @@ module Tnql
       ('brain' / 'breast' / 'endocrine' / 'gynaecological'
       / 'haematological' / 'head' space 'and' space 'neck'
       / 'lower' space 'gi' / 'lung' / 'other' / 'sarcoma'
-      / 'skin' / 'upper' space 'gi' / 'urological') <Tnql::Nodes::SiteGroupNode>
+      / 'skin' / 'upper' space 'gi' / 'urological') <Nodes::SiteGroupNode>
     end
 
     rule names_type
@@ -24,23 +24,23 @@ module Tnql
     end
 
     rule melanoma
-      'melanoma' <Tnql::Nodes::MelanomaNode>
+      'melanoma' <Nodes::MelanomaNode>
     end
 
     rule non_melanoma
-      ('nmsc' / 'non-melanoma' / 'non' space 'melanoma') <Tnql::Nodes::NonMelanomaNode>
+      ('nmsc' / 'non-melanoma' / 'non' space 'melanoma') <Nodes::NonMelanomaNode>
     end
 
     rule sites
-      first:site rest:more_sites* <Tnql::Nodes::SitesNode>
+      first:site rest:more_sites* <Nodes::SitesNode>
     end
 
     rule more_sites
-      ','? space? ('and' space)? site <Tnql::Nodes::AdditionalSiteNode>
+      ','? space? ('and' space)? site <Nodes::AdditionalSiteNode>
     end
 
     rule site
-      (icd_site / snomed_site) <Tnql::Nodes::SingleSiteNode>
+      (icd_site / snomed_site) <Nodes::SingleSiteNode>
     end
 
     rule icd_site

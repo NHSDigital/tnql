@@ -1,27 +1,27 @@
 module Tnql
   grammar Age
     rule age
-      space age:(fuzzy_age / exact_age) <Tnql::Nodes::AgeNode>
+      space age:(fuzzy_age / exact_age) <Nodes::AgeNode>
     end
 
     rule exact_age
-      [0-9] 1..3 <Tnql::Nodes::ExactAgeNode>
+      [0-9] 1..3 <Nodes::ExactAgeNode>
     end
 
     rule fuzzy_age
-      'between' space start:exact_age space 'and' space finish:exact_age <Tnql::Nodes::FuzzyAgeNode>
+      'between' space start:exact_age space 'and' space finish:exact_age <Nodes::FuzzyAgeNode>
     end
 
     rule with_age_at_diagnosis
-      were_keyword aged_keyword age <Tnql::Nodes::AgeAtDiagnosisNode>
+      were_keyword aged_keyword age <Nodes::AgeAtDiagnosisNode>
     end
 
     rule with_death_date
-      died_keyword fuzzy_date <Tnql::Nodes::DeathDateNode>
+      died_keyword fuzzy_date <Nodes::DeathDateNode>
     end
 
     rule with_birth_date
-      were_keyword born_keyword fuzzy_date <Tnql::Nodes::BirthDateNode>
+      were_keyword born_keyword fuzzy_date <Nodes::BirthDateNode>
     end
 
     rule age_group
@@ -29,19 +29,19 @@ module Tnql
     end
 
     rule ctya
-      'ctya' <Tnql::Nodes::CtyaNode>
+      'ctya' <Nodes::CtyaNode>
     end
 
     rule paediatric
-      'paediatric' <Tnql::Nodes::PaediatricNode>
+      'paediatric' <Nodes::PaediatricNode>
     end
 
     rule teenage
-      'teenage' <Tnql::Nodes::TeenageNode>
+      'teenage' <Nodes::TeenageNode>
     end
 
     rule young_adult
-      'young' space 'adult' <Tnql::Nodes::YoungAdultNode>
+      'young' space 'adult' <Nodes::YoungAdultNode>
     end
 
     rule aged_keyword

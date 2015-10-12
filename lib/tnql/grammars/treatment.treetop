@@ -13,11 +13,11 @@ module Tnql
     end
 
     rule treatmentdate_range
-      space 'between' space start:date_fragment space 'and' space finish:date_fragment <Tnql::Nodes::TreatmentDateRangeNode>
+      space 'between' space start:date_fragment space 'and' space finish:date_fragment <Nodes::TreatmentDateRangeNode>
     end
 
     rule treatmentdate_detail
-      space ('in' / 'on') space date_fragment <Tnql::Nodes::TreatmentPreciseDateNode>
+      space ('in' / 'on') space date_fragment <Nodes::TreatmentPreciseDateNode>
     end
 
     rule treatment_provider
@@ -25,11 +25,11 @@ module Tnql
     end
 
     rule treatment_provider_name
-      (!(space provider_type) .)+ space provider_type <Tnql::Nodes::TreatmentProviderNameNode>
+      (!(space provider_type) .)+ space provider_type <Nodes::TreatmentProviderNameNode>
     end
 
     rule treatment_provider_code
-      provider_type space code:(!' ' .)+ <Tnql::Nodes::TreatmentProviderCodeNode>
+      provider_type space code:(!' ' .)+ <Nodes::TreatmentProviderCodeNode>
     end
   end
 end

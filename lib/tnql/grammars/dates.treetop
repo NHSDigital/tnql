@@ -1,23 +1,23 @@
 module Tnql
   grammar Dates
     rule fuzzy_date
-      date:(between_dates / on_dates) word_break <Tnql::Nodes::FuzzyDateNode>
+      date:(between_dates / on_dates) word_break <Nodes::FuzzyDateNode>
     end
 
     rule on_dates
-      space ('on' / 'in') space date_fragment <Tnql::Nodes::SpecificDateNode>
+      space ('on' / 'in') space date_fragment <Nodes::SpecificDateNode>
     end
 
     rule between_dates
-      space 'between' space start:date_fragment space 'and' space finish:date_fragment <Tnql::Nodes::FragmentedDateRangeNode>
+      space 'between' space start:date_fragment space 'and' space finish:date_fragment <Nodes::FragmentedDateRangeNode>
     end
 
     rule date_fragment
-     fragment:(daterange / chronic_date) word_break <Tnql::Nodes::DateFragmentNode>
+     fragment:(daterange / chronic_date) word_break <Nodes::DateFragmentNode>
     end
 
     rule daterange
-      day_or_month? day_or_month? year <Tnql::Nodes::DateRangeNode>
+      day_or_month? day_or_month? year <Nodes::DateRangeNode>
     end
 
     rule day_or_month
@@ -29,7 +29,7 @@ module Tnql
     end
 
     rule chronic_date
-      (!(space ('and' / 'at' / 'with' / 'who')) .)+ <Tnql::Nodes::ChronicDateNode>
+      (!(space ('and' / 'at' / 'with' / 'who')) .)+ <Nodes::ChronicDateNode>
     end
   end
 end
