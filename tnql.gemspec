@@ -28,7 +28,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'ndr_support', '~> 2.0'
+  spec.add_dependency 'ndr_support', '~> 3.0'
   spec.add_dependency 'treetop', '>= 1.4.10'
   spec.add_dependency 'chronic', '~> 0.3.0'
   spec.add_dependency 'activesupport', '>= 3.2.18', '< 5.0.0'
