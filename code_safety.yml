@@ -12,6 +12,10 @@ file safety:
     comments: 
     reviewed_by: timgentry
     safe_revision: a196a464af55293c0466ff685d80c7b13c65c61a
+  .travis.yml:
+    comments: 
+    reviewed_by: 
+    safe_revision: 
   CODE_OF_CONDUCT.md:
     comments: 
     reviewed_by: timgentry
@@ -23,7 +27,7 @@ file safety:
   Guardfile:
     comments: 
     reviewed_by: timgentry
-    safe_revision: 5614cf1a147785dd8b979970518feb317f5491a9
+    safe_revision: c44f755e2c2239fed8b663794fa59d2a7e246336
   LICENSE.txt:
     comments: 
     reviewed_by: timgentry
@@ -31,27 +35,27 @@ file safety:
   README.md:
     comments: 
     reviewed_by: timgentry
-    safe_revision: fbe81fc4032cbe912547dc3633fe6e09ff1c2923
+    safe_revision: ba842eb8952b3d56c92b343c4f1763f941025981
   Rakefile:
     comments: 
-    reviewed_by: 
-    safe_revision: 
+    reviewed_by: timgentry
+    safe_revision: 99c996e1a9273d076575ccdb46e48594acaf0bdf
   bin/console:
     comments: 
-    reviewed_by: 
-    safe_revision: 
+    reviewed_by: timgentry
+    safe_revision: fdea3ed4f37453978857611724116f70dd08f1fd
   bin/setup:
     comments: 
     reviewed_by: 
     safe_revision: 
   lib/tnql.rb:
     comments: 
-    reviewed_by: 
-    safe_revision: 
+    reviewed_by: timgentry
+    safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   lib/tnql/constants.rb:
     comments: 
-    reviewed_by: 
-    safe_revision: 
+    reviewed_by: timgentry
+    safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   lib/tnql/grammars.rb:
     comments: 
     reviewed_by: 
@@ -182,72 +186,72 @@ file safety:
     safe_revision: 
   lib/tnql/version.rb:
     comments: 
-    reviewed_by: 
-    safe_revision: 
+    reviewed_by: timgentry
+    safe_revision: d835337607af16b5a6993e8257d5cc071714a5a3
   test/nodes/age_test.rb:
     comments: 
-    reviewed_by: 
-    safe_revision: 
+    reviewed_by: timgentry
+    safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   test/nodes/dates_test.rb:
     comments: 
-    reviewed_by: 
-    safe_revision: 
+    reviewed_by: timgentry
+    safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   test/nodes/diagnosis_test.rb:
     comments: 
-    reviewed_by: 
-    safe_revision: 
+    reviewed_by: timgentry
+    safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   test/nodes/e_base_records_test.rb:
     comments: 
-    reviewed_by: 
-    safe_revision: 
+    reviewed_by: timgentry
+    safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   test/nodes/main_test.rb:
     comments: 
-    reviewed_by: 
-    safe_revision: 
+    reviewed_by: timgentry
+    safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   test/nodes/patient_test.rb:
     comments: 
-    reviewed_by: 
-    safe_revision: 
+    reviewed_by: timgentry
+    safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   test/nodes/provider_test.rb:
     comments: 
-    reviewed_by: 
-    safe_revision: 
+    reviewed_by: timgentry
+    safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   test/nodes/registration_status_test.rb:
     comments: 
-    reviewed_by: 
-    safe_revision: 
+    reviewed_by: timgentry
+    safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   test/nodes/registry_test.rb:
     comments: 
-    reviewed_by: 
-    safe_revision: 
+    reviewed_by: timgentry
+    safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   test/nodes/staging_test.rb:
     comments: 
-    reviewed_by: 
-    safe_revision: 
+    reviewed_by: timgentry
+    safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   test/nodes/treatment_test.rb:
     comments: 
-    reviewed_by: 
-    safe_revision: 
+    reviewed_by: timgentry
+    safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   test/nodes/tumour_type_test.rb:
     comments: 
-    reviewed_by: 
-    safe_revision: 
+    reviewed_by: timgentry
+    safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   test/nodes/vital_status_test.rb:
     comments: 
-    reviewed_by: 
-    safe_revision: 
+    reviewed_by: timgentry
+    safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   test/parser_test.rb:
     comments: 
-    reviewed_by: 
-    safe_revision: 
+    reviewed_by: timgentry
+    safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   test/test_helper.rb:
     comments: 
     reviewed_by: 
     safe_revision: 
   test/tnql_test.rb:
     comments: 
-    reviewed_by: 
-    safe_revision: 
+    reviewed_by: timgentry
+    safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   tnql.gemspec:
     comments: 
     reviewed_by: 
