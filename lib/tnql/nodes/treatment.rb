@@ -5,8 +5,8 @@ module Tnql #:nodoc: all
         { 'treatment.startoradmissiondate' =>
           { Tnql::LIMITS =>
             [
-              start.to_daterange.date1.try(:to_date).to_s,
-              finish.to_daterange.date2.try(:to_date).to_s
+              start.to_daterange.date1.try(:to_date).try(:iso8601),
+              finish.to_daterange.date2.try(:to_date).try(:iso8601)
             ]
           }
         }
@@ -20,8 +20,8 @@ module Tnql #:nodoc: all
         { 'treatment.startoradmissiondate' =>
           { Tnql::LIMITS =>
             [
-              date_range.date1.try(:to_date).to_s,
-              date_range.date2.try(:to_date).to_s
+              date_range.date1.try(:to_date).try(:iso8601),
+              date_range.date2.try(:to_date).try(:iso8601)
             ]
           }
         }

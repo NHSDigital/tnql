@@ -5,8 +5,8 @@ module Tnql #:nodoc: all
         { 'tumour.diagnosisdate' =>
           { Tnql::LIMITS =>
             [
-              start.to_daterange.date1.try(:to_date).to_s,
-              finish.to_daterange.date2.try(:to_date).to_s
+              start.to_daterange.date1.try(:to_date).try(:iso8601),
+              finish.to_daterange.date2.try(:to_date).try(:iso8601)
             ]
           }
         }
@@ -20,7 +20,8 @@ module Tnql #:nodoc: all
         { 'tumour.diagnosisdate' =>
           { Tnql::LIMITS =>
             [
-              range.date1.try(:to_date).to_s, range.date2.try(:to_date).to_s
+              range.date1.try(:to_date).try(:iso8601),
+              range.date2.try(:to_date).try(:iso8601)
             ]
           }
         }

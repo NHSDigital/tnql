@@ -4,6 +4,9 @@ require 'tnql'
 require 'minitest/autorun'
 require 'minitest/unit'
 
+# Override the default Date#to_s format to ensure the formmating is right
+Date::DATE_FORMATS.update(:default => '%d.%m.%Y')
+
 # This method helps make the assertion that a query producing more than one meta_data filter
 # contains all the meta_data filters of the equivalent array of of individual queries.
 # i.e. the query:

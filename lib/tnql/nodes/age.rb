@@ -35,7 +35,7 @@ module Tnql #:nodoc: all
         { 'patient.deathdate' =>
           { Tnql::LIMITS =>
             [
-              range.date1.try(:to_date).to_s, range.date2.try(:to_date).to_s
+              range.date1.try(:to_date).try(:iso8601), range.date2.try(:to_date).try(:iso8601)
             ]
           }
         }
@@ -48,7 +48,7 @@ module Tnql #:nodoc: all
         { 'patient.birthdate' =>
           { Tnql::LIMITS =>
             [
-              range.date1.try(:to_date).to_s, range.date2.try(:to_date).to_s
+              range.date1.try(:to_date).try(:iso8601), range.date2.try(:to_date).try(:iso8601)
             ]
           }
         }
