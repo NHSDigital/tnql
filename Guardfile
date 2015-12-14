@@ -9,7 +9,7 @@ end
 
 guard :minitest do
   watch(%r{^test/.+_test\.rb$})
-  watch('test/test_helper.rb')  { 'test' }
+  watch('test/test_helper.rb') { 'test' }
 
   watch(%r{^lib/tnql/(.+)\.rb$}) { |m| "test/#{m[1]}_test.rb" }
 end
