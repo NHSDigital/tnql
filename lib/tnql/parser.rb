@@ -23,6 +23,14 @@ module Tnql
       valid? ? nil : @parser.failure_reason
     end
 
+    def failure_line
+      valid? ? nil : @parser.failure_line
+    end
+
+    def failure_column
+      valid? ? nil : @parser.failure_column
+    end
+
     def diagnosis_range
       tumour_diagnosisdate = meta_data['tumour.diagnosisdate']
       return nil unless tumour_diagnosisdate
