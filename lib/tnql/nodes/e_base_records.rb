@@ -39,18 +39,21 @@ module Tnql #:nodoc: all
 
     module ActionProviderCodeNode
       def meta_data_item
-        {
-          'action.providercode' => { Tnql::EQUALS => code.text_value.upcase },
-          'action.providertype' => { Tnql::EQUALS => provider_type.text_value.upcase }
-        }
+        # default to provider
+        key = provider_type.text_value == 'cancer network' ? 'cn_ukacr' : 'providercode'
+        { "action.#{key}" => { Tnql::EQUALS => code.text_value.upcase } }
       end
     end
 
     module ActionProviderNameNode
       def meta_data_item
-        {
-          'action.providername' => { Tnql::BEGINS => short_desc.text_value.upcase },
-          'action.providertype' => { Tnql::EQUALS => provider_type.text_value.upcase }
+        # default to provider
+        key = provider_type.text_value == 'cancer network' ? 'cn_ukacrname' : 'providername'
+        { "action.#{key}" =>
+          {
+            Tnql::BEGINS => short_desc.text_value.upcase,
+            :interval => interval
+          }
         }
       end
     end
