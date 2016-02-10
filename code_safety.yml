@@ -1,18 +1,18 @@
 ---
 file safety:
-  .gitignore:
+  ".gitignore":
     comments: 
     reviewed_by: timgentry
     safe_revision: 065dcccb9db71374cea5aad104657a5c1f877d1c
-  .rubocop.yml:
+  ".hound.yml":
     comments: 
-    reviewed_by: timgentry
-    safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
-  .ruby-version:
+    reviewed_by: 
+    safe_revision: 
+  ".rubocop.yml":
     comments: 
-    reviewed_by: timgentry
-    safe_revision: a196a464af55293c0466ff685d80c7b13c65c61a
-  .travis.yml:
+    reviewed_by: 
+    safe_revision: 
+  ".travis.yml":
     comments: 
     reviewed_by: 
     safe_revision: 
