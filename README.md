@@ -1,10 +1,10 @@
 # TNQL [![Build Status](https://travis-ci.org/PublicHealthEngland/tnql.svg?branch=master)](https://travis-ci.org/PublicHealthEngland/tnql)
 
-Tumour Natural Query Language (TNQL) is a [Treetop](http://treetop.rubyforge.org/) driven Domain Specific Language (DSL) used by the Public Health England (PHE) National Cancer Registration Service (NCRS) to identify cohorts of tumours.
+Tumour Natural Query Language (TNQL) is a [Treetop](http://treetop.rubyforge.org/) driven Domain Specific Language (DSL) used by the Public Health England (PHE) National Cancer Registration and Analysis Service (NCRAS) to identify cohorts of tumours.
 
 Used for analysis, research and day-to-day operations, it was first created in March 2011 to empower non-technical users to write sophisticated human readable queries without the need to know or understand the underlying datastore and/or schema.
 
-In moving it into a gem, TNQL is being further decoupled from the specifics of the NCRS systems by producing an intermediate representation, known as Disease Intermediate Representation (DIR). This allows us to:
+In moving it into a gem, TNQL is being further decoupled from the specifics of the NCRAS systems by producing an intermediate representation, known as Disease Intermediate Representation (DIR). This allows us to:
 
 1. implement separate DIR adapters for different datastores (e.g. SQL and NoSQL datastores);
 2. utilize the same DIR adapters for different but over-lapping DSLs, starting with the Congenital Anomaly Natural Query Language (CANQL); and
@@ -60,7 +60,7 @@ After checking out the repo, run `bin/setup` to install dependencies. Then, run 
 
 To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
-PLEASE NOTE: A side-effect of decoupling TNQL from the NCRS SQL adapter is that more of the grammar logic can be DRYed up, esp. in relation to providers. We plan to fix this and some internal namespacing in forthcoming releases.
+PLEASE NOTE: A side-effect of decoupling TNQL from the NCRAS SQL adapter is that more of the grammar logic can be DRYed up, esp. in relation to providers. We plan to fix this and some internal namespacing in forthcoming releases.
 
 ## Contributing
 

@@ -6,11 +6,11 @@ require 'tnql/version'
 Gem::Specification.new do |spec|
   spec.name          = 'tnql'
   spec.version       = Tnql::VERSION
-  spec.authors       = ['PHE NCRS Development Team']
+  spec.authors       = ['PHE NDR IT Development Team']
   spec.email         = []
 
   spec.summary       = 'Tumour Natural Query Language'
-  spec.description   = 'Domain Specific Language for querying PHE NCRS datastores'
+  spec.description   = 'Domain Specific Language for querying PHE NCRAS datastores'
   spec.homepage      = 'https://github.com/PublicHealthEngland/tnql'
   spec.license       = 'MIT'
 
