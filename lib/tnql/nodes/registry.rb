@@ -23,7 +23,7 @@ module Tnql #:nodoc: all
         'swcis'  => 'Y1001',
         'wmciu'  => 'Y1201',
         'nwcis'  => 'Y1701'
-      } unless defined?(REGISTRY_ABBR)
+      }.freeze unless defined?(REGISTRY_ABBR)
 
       def to_registrycode
         REGISTRY_ABBR[text_value]

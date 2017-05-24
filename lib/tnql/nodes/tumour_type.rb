@@ -30,7 +30,7 @@ module Tnql #:nodoc: all
         'skin'           => 11,
         'upper gi'       => 5,
         'urological'     => 12
-      } unless defined?(SITE_GROUPS)
+      }.freeze unless defined?(SITE_GROUPS)
 
       def meta_data_item
         { 'tumour.site_group' => { Tnql::EQUALS => SITE_GROUPS[text_value] } }

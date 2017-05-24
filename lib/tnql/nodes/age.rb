@@ -32,9 +32,9 @@ module Tnql #:nodoc: all
     module DeathDateNode
       def meta_data_item
         range = fuzzy_date.to_daterange
-        { 'patient.deathdate' =>
-          { Tnql::LIMITS =>
-            [
+        {
+          'patient.deathdate' => {
+            Tnql::LIMITS => [
               range.date1.try(:to_date).try(:iso8601), range.date2.try(:to_date).try(:iso8601)
             ]
           }
@@ -45,9 +45,9 @@ module Tnql #:nodoc: all
     module BirthDateNode
       def meta_data_item
         range = fuzzy_date.to_daterange
-        { 'patient.birthdate' =>
-          { Tnql::LIMITS =>
-            [
+        {
+          'patient.birthdate' => {
+            Tnql::LIMITS => [
               range.date1.try(:to_date).try(:iso8601), range.date2.try(:to_date).try(:iso8601)
             ]
           }

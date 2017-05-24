@@ -49,8 +49,8 @@ module Tnql #:nodoc: all
       def meta_data_item
         # default to provider
         key = provider_type.text_value == 'cancer network' ? 'cn_ukacrname' : 'providername'
-        { "action.#{key}" =>
-          {
+        {
+          "action.#{key}" => {
             Tnql::BEGINS => short_desc.text_value.upcase,
             :interval => interval
           }

@@ -9,4 +9,4 @@ Rake::TestTask.new(:test) do |t|
   t.warning = false
 end
 
-task :default => :test
+task default: :test

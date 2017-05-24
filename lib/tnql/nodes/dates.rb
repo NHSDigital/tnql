@@ -38,7 +38,7 @@ module Tnql #:nodoc: all
 
     module ChronicDateNode
       def to_daterange
-        chronic = Chronic.parse(text_value.to_s, :context => :past, :guess => false)
+        chronic = Chronic.parse(text_value.to_s, context: :past, guess: false)
         if chronic.instance_of?(Chronic::Span)
           Daterange.new(chronic.begin, chronic.end - 1.day)
         else
