@@ -7,6 +7,8 @@ module Tnql
     attr_reader :parser
 
     def initialize(query)
+      raise ArgumentError unless query.is_a?(String)
+
       @parser = TnqlParser.new
       @result = @parser.parse(query.downcase)
 
