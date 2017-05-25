@@ -192,8 +192,8 @@ file safety:
     safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   lib/tnql/parser.rb:
     comments: 
-    reviewed_by: 
-    safe_revision: 
+    reviewed_by: timgentry
+    safe_revision: 40100d5f23601b0033ddcf0bd7a6367446066cc5
   lib/tnql/treetop/extensions.rb:
     comments: 
     reviewed_by: timgentry
@@ -257,7 +257,7 @@ file safety:
   test/parser_test.rb:
     comments: 
     reviewed_by: timgentry
-    safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
+    safe_revision: 40100d5f23601b0033ddcf0bd7a6367446066cc5
   test/test_helper.rb:
     comments: 
     reviewed_by: timgentry
