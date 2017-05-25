@@ -201,7 +201,7 @@ file safety:
   lib/tnql/version.rb:
     comments: 
     reviewed_by: timgentry
-    safe_revision: 2c3dd20879903b98f7f05d5d3e73b1478c275c93
+    safe_revision: 44b3b8fee3cf50c9fe614dbccc9eccc27f0c87a3
   test/nodes/age_test.rb:
     comments: 
     reviewed_by: timgentry
@@ -269,4 +269,4 @@ file safety:
   tnql.gemspec:
     comments: 
     reviewed_by: timgentry
-    safe_revision: 2c3dd20879903b98f7f05d5d3e73b1478c275c93
+    safe_revision: 44b3b8fee3cf50c9fe614dbccc9eccc27f0c87a3
