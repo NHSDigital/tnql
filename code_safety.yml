@@ -2,8 +2,8 @@
 file safety:
   ".gitignore":
     comments: 
-    reviewed_by: timgentry
-    safe_revision: 065dcccb9db71374cea5aad104657a5c1f877d1c
+    reviewed_by: josh.pencheon
+    safe_revision: fbc1cf349a296e3489e4b27b4de6c52222113926
   ".hound.yml":
     comments: 
     reviewed_by: timgentry
@@ -14,8 +14,8 @@ file safety:
     safe_revision: b85a30c6fd89eddc6597323f7afe7ea2859ae9ac
   ".travis.yml":
     comments: 
-    reviewed_by: timgentry
-    safe_revision: d4f2a88af5df3bde2a58185e8095821fafc599bf
+    reviewed_by: josh.pencheon
+    safe_revision: fbc1cf349a296e3489e4b27b4de6c52222113926
   CODE_OF_CONDUCT.md:
     comments: 
     reviewed_by: timgentry
@@ -48,6 +48,18 @@ file safety:
     comments: 
     reviewed_by: timgentry
     safe_revision: 065dcccb9db71374cea5aad104657a5c1f877d1c
+  gemfiles/Gemfile.rails42:
+    comments: 
+    reviewed_by: josh.pencheon
+    safe_revision: fbc1cf349a296e3489e4b27b4de6c52222113926
+  gemfiles/Gemfile.rails50:
+    comments: 
+    reviewed_by: josh.pencheon
+    safe_revision: fbc1cf349a296e3489e4b27b4de6c52222113926
+  gemfiles/Gemfile.rails51:
+    comments: 
+    reviewed_by: josh.pencheon
+    safe_revision: fbc1cf349a296e3489e4b27b4de6c52222113926
   lib/tnql.rb:
     comments: 
     reviewed_by: timgentry
@@ -200,8 +212,8 @@ file safety:
     safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   lib/tnql/version.rb:
     comments: 
-    reviewed_by: timgentry
-    safe_revision: 44b3b8fee3cf50c9fe614dbccc9eccc27f0c87a3
+    reviewed_by: josh.pencheon
+    safe_revision: 6131fb1379d6ba622811f33415cf5018c382de53
   test/nodes/age_test.rb:
     comments: 
     reviewed_by: timgentry
@@ -217,7 +229,7 @@ file safety:
   test/nodes/e_base_records_test.rb:
     comments: 
     reviewed_by: timgentry
-    safe_revision: 0749ad008871e286c6e0450a733599f0c86ced5f
+    safe_revision: '0749ad008871e286c6e0450a733599f0c86ced5f'
   test/nodes/main_test.rb:
     comments: 
     reviewed_by: timgentry
@@ -268,5 +280,5 @@ file safety:
     safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   tnql.gemspec:
     comments: 
-    reviewed_by: timgentry
-    safe_revision: 44b3b8fee3cf50c9fe614dbccc9eccc27f0c87a3
+    reviewed_by: josh.pencheon
+    safe_revision: fbc1cf349a296e3489e4b27b4de6c52222113926
