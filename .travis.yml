@@ -1,17 +1,16 @@
 language: ruby
-
 rvm:
-  - 2.3
-  - 2.4
-  - 2.5
-
+- 2.3
+- 2.4
+- 2.5
 gemfile:
-  - gemfiles/Gemfile.rails42
-  - gemfiles/Gemfile.rails50
-  - gemfiles/Gemfile.rails51
-
+- gemfiles/Gemfile.rails42
+- gemfiles/Gemfile.rails50
+- gemfiles/Gemfile.rails51
 sudo: false
-
 cache: bundler
-
-before_script: "bundle update"
+before_script: bundle update
+notifications:
+  slack:
+    rooms:
+      secure: euneOsd2CPIcg29EltYKkGtGzCcIf/OCcVO102oBbKW0PcqNc7aJv0XFMnPRwi25+B/7hRXcYfGgKHpWXgkfc09upKFyxKpMYjL+FYWKG3IvOtf51FUZ87WRUPZkI09WX2KMC8eWFxqkQWPfXVxr1rmFHALv2+knCyRTpqyoqoGdqtLk7dmgrWt1JxsTtfZQ7CfCDcoz09eZXaOOpIJEd2144eRmSWL/iM548f387f/2Sjzdzg3M9O8pi4FHrR/1DwAvh3fTunPSa2iBX8GNJfca0RCC8HdXjh/VDjQgHq6G/xzvhz4LQmElMlz9ZJCJW4TKQHRr1xo+l0KO/aZUzvF8fOL4LoWENueQyC8MonrW09xxjHiYBav6XzfZU9D3n/KSzJZAMJtvKFjmC0uEIu4Q6mIxuyWmIc3k4JNWkYSY9+F9mnoVQvjF4TK4NWKJyxVa1eEc/4Rn247nxormGrizttFanVGptFK09Smpsu/89XTMPKAoEoMzZgWPA8bgHzE55rHGEMapb5Nkln7hWkYxrtOwHR4xXIkvk3hHsfZqi6YkYedtzdPCDHr9vywjM7q8m6qvHAY5TqRdoBejwEIps5EbqxRPW8LLvwIMa7773/nw6x4y9qZfuiYA/kcPITUSTCh/O2e+0FFs0Y8Og9Z6Fm+Yq7uyIE4WWxSFwi8=
