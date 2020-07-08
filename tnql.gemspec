@@ -22,14 +22,14 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.required_ruby_version = '>= 2.5'
+  spec.required_ruby_version = '>= 2.6'
 
-  spec.add_dependency 'activesupport', '>= 3.2.18', '< 6'
+  spec.add_dependency 'activesupport', '>= 3.2.18', '< 7'
   spec.add_dependency 'ndr_support', '>= 3.0', '< 6'
   spec.add_dependency 'treetop', '>= 1.4.10'
   spec.add_dependency 'chronic', '~> 0.3'
 
-  spec.add_development_dependency 'ndr_dev_support', '~> 3.1', '>= 3.1.3'
+  spec.add_development_dependency 'ndr_dev_support', '~> 5.9'
   spec.add_development_dependency 'bundler'
   spec.add_development_dependency 'rake'
   spec.add_development_dependency 'minitest', '>= 5.0.0'

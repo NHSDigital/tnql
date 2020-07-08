@@ -1,5 +1,6 @@
 ## [Unreleased]
-*no unreleased changes*
+### Fixed
+* Compatibility with Rails 6
 
 ## 1.0.3 / 2019-10-29
 ### Fixed
