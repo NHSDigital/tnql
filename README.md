@@ -1,4 +1,4 @@
-# TNQL [![Build Status](https://travis-ci.org/PublicHealthEngland/tnql.svg?branch=master)](https://travis-ci.org/PublicHealthEngland/tnql)
+# TNQL [![Build Status](https://github.com/publichealthengland/tnql/workflows/Test/badge.svg)](https://github.com/publichealthengland/tnql/actions?query=workflow%3Atest) [![Gem Version](https://badge.fury.io/rb/tnql.svg)](https://rubygems.org/gems/tnql)
 
 Tumour Natural Query Language (TNQL) is a [Treetop](http://treetop.rubyforge.org/) driven Domain Specific Language (DSL) used by the Public Health England (PHE) National Cancer Registration and Analysis Service (NCRAS) to identify cohorts of tumours.
 
