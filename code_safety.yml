@@ -15,7 +15,11 @@ file safety:
   ".travis.yml":
     comments: 
     reviewed_by: josh.pencheon
-    safe_revision: 3316c8246806653c6ae3f50864b710dd76a064b3
+    safe_revision: 8f52c0cbddb974f10eb4f8c3de06038aa95e3429
+  CHANGELOG.md:
+    comments: 
+    reviewed_by: josh.pencheon
+    safe_revision: 745de7ab45ca525e2eecd53c4c6b55152f33039e
   CODE_OF_CONDUCT.md:
     comments: 
     reviewed_by: timgentry
@@ -48,22 +52,14 @@ file safety:
     comments: 
     reviewed_by: timgentry
     safe_revision: 065dcccb9db71374cea5aad104657a5c1f877d1c
-  gemfiles/Gemfile.rails42:
-    comments: 
-    reviewed_by: josh.pencheon
-    safe_revision: fbc1cf349a296e3489e4b27b4de6c52222113926
-  gemfiles/Gemfile.rails50:
-    comments: 
-    reviewed_by: josh.pencheon
-    safe_revision: fbc1cf349a296e3489e4b27b4de6c52222113926
-  gemfiles/Gemfile.rails51:
-    comments: 
-    reviewed_by: josh.pencheon
-    safe_revision: fbc1cf349a296e3489e4b27b4de6c52222113926
   gemfiles/Gemfile.rails52:
     comments: 
     reviewed_by: josh.pencheon
     safe_revision: 3316c8246806653c6ae3f50864b710dd76a064b3
+  gemfiles/Gemfile.rails60:
+    comments: 
+    reviewed_by: josh.pencheon
+    safe_revision: 8f52c0cbddb974f10eb4f8c3de06038aa95e3429
   lib/tnql.rb:
     comments: 
     reviewed_by: timgentry
@@ -217,7 +213,7 @@ file safety:
   lib/tnql/version.rb:
     comments: 
     reviewed_by: josh.pencheon
-    safe_revision: e5de14fd7e4ccc5d4749b2f5ff72cbafac3a3821
+    safe_revision: 745de7ab45ca525e2eecd53c4c6b55152f33039e
   test/nodes/age_test.rb:
     comments: 
     reviewed_by: timgentry
@@ -285,4 +281,4 @@ file safety:
   tnql.gemspec:
     comments: 
     reviewed_by: josh.pencheon
-    safe_revision: 7739f6f91db378b9e9d9afdc5741b8d8f4662d46
+    safe_revision: a669dac8f97b3e0675b8c4b2e9e891705566f039
