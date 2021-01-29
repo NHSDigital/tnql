@@ -1,5 +1,17 @@
 ---
 file safety:
+  ".github/CODEOWNERS":
+    comments: 
+    reviewed_by: josh.pencheon
+    safe_revision: b2ac2de6856884bdb1e0cb369b02d30c1fd64166
+  ".github/workflows/lint.yml":
+    comments: 
+    reviewed_by: josh.pencheon
+    safe_revision: b2ac2de6856884bdb1e0cb369b02d30c1fd64166
+  ".github/workflows/test.yml":
+    comments: 
+    reviewed_by: josh.pencheon
+    safe_revision: b2ac2de6856884bdb1e0cb369b02d30c1fd64166
   ".gitignore":
     comments: 
     reviewed_by: josh.pencheon
@@ -12,10 +24,6 @@ file safety:
     comments: 
     reviewed_by: timgentry
     safe_revision: b85a30c6fd89eddc6597323f7afe7ea2859ae9ac
-  ".travis.yml":
-    comments: 
-    reviewed_by: josh.pencheon
-    safe_revision: 8f52c0cbddb974f10eb4f8c3de06038aa95e3429
   CHANGELOG.md:
     comments: 
     reviewed_by: josh.pencheon
@@ -38,8 +46,8 @@ file safety:
     safe_revision: 065dcccb9db71374cea5aad104657a5c1f877d1c
   README.md:
     comments: 
-    reviewed_by: timgentry
-    safe_revision: f47d9a806bce9a24ee538dae9674c7deba79a7a8
+    reviewed_by: josh.pencheon
+    safe_revision: b2ac2de6856884bdb1e0cb369b02d30c1fd64166
   Rakefile:
     comments: 
     reviewed_by: timgentry
