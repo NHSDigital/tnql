@@ -1,4 +1,7 @@
 ## [Unreleased]
+*no unreleased changes*
+
+## 1.0.4 / 2021-01-29
 ### Fixed
 * Compatibility with Rails 6
 
