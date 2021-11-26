@@ -22,12 +22,12 @@ file safety:
     safe_revision: 1cf068b17559ed381e013fe71a481eb3db15f553
   ".rubocop.yml":
     comments: 
-    reviewed_by: timgentry
-    safe_revision: b85a30c6fd89eddc6597323f7afe7ea2859ae9ac
+    reviewed_by: ollietulloch
+    safe_revision: b1aeb26ad5721337fc37605b11e2a4a859ebc1f7
   CHANGELOG.md:
     comments: 
-    reviewed_by: josh.pencheon
-    safe_revision: 745de7ab45ca525e2eecd53c4c6b55152f33039e
+    reviewed_by: ollietulloch
+    safe_revision: ce29bfb3212ce792e834a12574054a151aef6820
   CODE_OF_CONDUCT.md:
     comments: 
     reviewed_by: timgentry
@@ -128,8 +128,8 @@ file safety:
   lib/tnql/grammars/registry.treetop:
     comments: It is a known issue that this is potentially susceptible to certain
       kinds of DoS attack
-    reviewed_by: timgentry
-    safe_revision: b3a8b33cbc5dd29822e0e6ded32500ccd7a15670
+    reviewed_by: ollietulloch
+    safe_revision: 0ba6205a546963eb7e7387bea51f81e6b5485af8
   lib/tnql/grammars/staging.treetop:
     comments: It is a known issue that this is potentially susceptible to certain
       kinds of DoS attack
@@ -192,8 +192,8 @@ file safety:
     safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   lib/tnql/nodes/registry.rb:
     comments: 
-    reviewed_by: timgentry
-    safe_revision: 2c3dd20879903b98f7f05d5d3e73b1478c275c93
+    reviewed_by: ollietulloch
+    safe_revision: 96b9ba36a2da7246bff2f0a49cef0e1808ddb4e5
   lib/tnql/nodes/staging.rb:
     comments: 
     reviewed_by: timgentry
@@ -220,8 +220,8 @@ file safety:
     safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   lib/tnql/version.rb:
     comments: 
-    reviewed_by: josh.pencheon
-    safe_revision: 745de7ab45ca525e2eecd53c4c6b55152f33039e
+    reviewed_by: ollietulloch
+    safe_revision: ce29bfb3212ce792e834a12574054a151aef6820
   test/nodes/age_test.rb:
     comments: 
     reviewed_by: timgentry
@@ -256,8 +256,8 @@ file safety:
     safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   test/nodes/registry_test.rb:
     comments: 
-    reviewed_by: timgentry
-    safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
+    reviewed_by: ollietulloch
+    safe_revision: 0ba6205a546963eb7e7387bea51f81e6b5485af8
   test/nodes/staging_test.rb:
     comments: 
     reviewed_by: timgentry
@@ -288,5 +288,5 @@ file safety:
     safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   tnql.gemspec:
     comments: 
-    reviewed_by: josh.pencheon
-    safe_revision: a669dac8f97b3e0675b8c4b2e9e891705566f039
+    reviewed_by: ollietulloch
+    safe_revision: 14e059d904af19a4921a37b2949529b916d19b93
