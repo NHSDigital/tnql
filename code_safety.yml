@@ -25,9 +25,9 @@ file safety:
     reviewed_by: ollietulloch
     safe_revision: b1aeb26ad5721337fc37605b11e2a4a859ebc1f7
   CHANGELOG.md:
-    comments: 
+    comments: Incorrectly bumped to v1.5.0 from v1.0.4 previously
     reviewed_by: ollietulloch
-    safe_revision: ce29bfb3212ce792e834a12574054a151aef6820
+    safe_revision: dbd0e04b521511e49b7e5b004d1ca7e915867c09
   CODE_OF_CONDUCT.md:
     comments: 
     reviewed_by: timgentry
@@ -219,9 +219,9 @@ file safety:
     reviewed_by: timgentry
     safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   lib/tnql/version.rb:
-    comments: 
+    comments: Incorrectly bumped to v1.5.0 from v1.0.4 previously
     reviewed_by: ollietulloch
-    safe_revision: ce29bfb3212ce792e834a12574054a151aef6820
+    safe_revision: dbd0e04b521511e49b7e5b004d1ca7e915867c09
   test/nodes/age_test.rb:
     comments: 
     reviewed_by: timgentry
