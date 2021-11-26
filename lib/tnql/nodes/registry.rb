@@ -2,7 +2,21 @@ module Tnql #:nodoc: all
   module Nodes
     module RegistryNode
       def meta_data_item
-        { 'tumour.registry' => { Tnql::EQUALS => registry.to_registrycode } }
+        registrycode = registry.to_registrycode
+        exclude_crown_dependency = !exclude.blank? && exclude.to_registrycode == registrycode
+        { 'tumour.registry' => { Tnql::EQUALS => [registrycode, exclude_crown_dependency] } }
+      end
+    end
+
+    module ExcludeCrownDependencyNode
+      CROWN_DEPENDENCY_REGISRY = {
+        'channel islands' => 'Y1001',
+        'iom' => 'Y1701',
+        'isle of man' => 'Y1701'
+      }.freeze unless defined?(CROWN_DEPENDENCY_REGISRY)
+
+      def to_registrycode
+        CROWN_DEPENDENCY_REGISRY[crown_dependency.text_value]
       end
     end
 
