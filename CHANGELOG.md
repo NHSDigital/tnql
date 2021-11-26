@@ -1,5 +1,5 @@
 ## [Unreleased]
-*no unreleased changes*
+* update rubocop configuration
 
 ## 1.0.4 / 2021-01-29
 ### Fixed
