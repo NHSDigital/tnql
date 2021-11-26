@@ -1,5 +1,6 @@
 ## [Unreleased]
-*no unreleased changes*
+* update rubocop configuration
+* bump dependent gem `ndr_dev_support` to v6.0
 
 ## 1.0.4 / 2021-01-29
 ### Fixed
