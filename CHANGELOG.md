@@ -1,7 +1,7 @@
 ## [Unreleased]
-* no unreleased changes
+*no unreleased changes*
 
-## 1.5.0 / 2021-11-25
+## 1.1.0 / 2021-11-25
 ### Added
 * allow exclusion of crown dependency from corresponding registry
 ### Fixed
