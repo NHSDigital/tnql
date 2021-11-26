@@ -1,5 +1,5 @@
 ## [Unreleased]
-*no unreleased changes*
+* allow exclude crown dependency from correspondent registry
 
 ## 1.0.4 / 2021-01-29
 ### Fixed
