@@ -1,5 +1,5 @@
 # coding: utf-8
-lib = File.expand_path('../lib', __FILE__)
+lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'tnql/version'
 
@@ -29,7 +29,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'treetop', '>= 1.4.10'
   spec.add_dependency 'chronic', '~> 0.3'
 
-  spec.add_development_dependency 'ndr_dev_support', '~> 5.9'
+  spec.add_development_dependency 'ndr_dev_support', '~> 6.0'
   spec.add_development_dependency 'bundler'
   spec.add_development_dependency 'rake'
   spec.add_development_dependency 'minitest', '>= 5.0.0'
