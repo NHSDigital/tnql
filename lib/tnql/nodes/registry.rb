@@ -9,14 +9,14 @@ module Tnql #:nodoc: all
     end
 
     module ExcludeCrownDependencyNode
-      CROWN_DEPENDENCY_REGISRY = {
+      CROWN_DEPENDENCY_REGISTRY = {
         'channel islands' => 'Y1001',
         'iom' => 'Y1701',
         'isle of man' => 'Y1701'
-      }.freeze unless defined?(CROWN_DEPENDENCY_REGISRY)
+      }.freeze unless defined?(CROWN_DEPENDENCY_REGISTRY)
 
       def to_registrycode
-        CROWN_DEPENDENCY_REGISRY[crown_dependency.text_value]
+        CROWN_DEPENDENCY_REGISTRY[crown_dependency.text_value]
       end
     end
 
