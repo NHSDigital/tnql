@@ -1,7 +1,11 @@
 module Tnql
   grammar Registry
     rule registry
-      space registry:(registry_code / registry_abbr) <Nodes::RegistryNode>
+      exclude:exclude_crown_dependencies? space registry:(registry_code / registry_abbr) <Nodes::RegistryNode>
+    end
+
+    rule exclude_crown_dependencies
+      space ('not' / 'non' / 'exclude') space crown_dependency:('channel islands' / 'iom' / 'isle of man') <Nodes::ExcludeCrownDependencyNode>
     end
 
     rule registry_code
