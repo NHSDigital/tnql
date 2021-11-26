@@ -1,5 +1,10 @@
 ## [Unreleased]
-* allow exclude crown dependency from correspondent registry
+* no unreleased changes
+
+## 1.5.0 / 2021-11-25
+### Added
+* allow exclusion of crown dependency from corresponding registry
+### Fixed
 * update rubocop configuration
 * bump dependent gem `ndr_dev_support` to v6.0
 
