@@ -1,5 +1,8 @@
 ## [Unreleased]
-*no unreleased changes*
+### Fixed
+* Drop support for Ruby 2.6
+* Support Ruby 3.1, Rails 7.0
+* Replace Public Health England naming with NHS Digital
 
 ## 1.1.0 / 2021-11-25
 ### Added

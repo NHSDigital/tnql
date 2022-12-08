@@ -1,6 +1,6 @@
-# TNQL [![Build Status](https://github.com/publichealthengland/tnql/workflows/Test/badge.svg)](https://github.com/publichealthengland/tnql/actions?query=workflow%3Atest) [![Gem Version](https://badge.fury.io/rb/tnql.svg)](https://rubygems.org/gems/tnql)
+# TNQL [![Build Status](https://github.com/NHSDigital/tnql/workflows/Test/badge.svg)](https://github.com/NHSDigital/tnql/actions?query=workflow%3Atest) [![Gem Version](https://badge.fury.io/rb/tnql.svg)](https://rubygems.org/gems/tnql)
 
-Tumour Natural Query Language (TNQL) is a [Treetop](http://treetop.rubyforge.org/) driven Domain Specific Language (DSL) used by the Public Health England (PHE) National Cancer Registration and Analysis Service (NCRAS) to identify cohorts of tumours.
+Tumour Natural Query Language (TNQL) is a [Treetop](http://treetop.rubyforge.org/) driven Domain Specific Language (DSL) used by the NHS Digital (NHS-D) National Cancer Registration and Analysis Service (NCRAS) to identify cohorts of tumours.
 
 Used for analysis, research and day-to-day operations, it was first created in March 2011 to empower non-technical users to write sophisticated human readable queries without the need to know or understand the underlying datastore and/or schema.
 
@@ -64,7 +64,7 @@ PLEASE NOTE: A side-effect of decoupling TNQL from the NCRAS SQL adapter is that
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/PublicHealthEngland/tnql.
+Bug reports and pull requests are welcome on GitHub at https://github.com/NHSDigital/tnql.
 
 This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
