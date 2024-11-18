@@ -1,83 +1,91 @@
 ---
 file safety:
   ".github/CODEOWNERS":
-    comments: 
-    reviewed_by: josh.pencheon
-    safe_revision: b2ac2de6856884bdb1e0cb369b02d30c1fd64166
+    comments:
+    reviewed_by: brian.shand
+    safe_revision: c9cb4b6701e0a4883c76aaf622d8301cc489a76a
   ".github/workflows/lint.yml":
-    comments: 
+    comments:
     reviewed_by: josh.pencheon
     safe_revision: b2ac2de6856884bdb1e0cb369b02d30c1fd64166
   ".github/workflows/test.yml":
-    comments: 
-    reviewed_by: josh.pencheon
-    safe_revision: b2ac2de6856884bdb1e0cb369b02d30c1fd64166
+    comments:
+    reviewed_by: brian.shand
+    safe_revision: 7588de7db07a00898d52403141e69ab48aff2e15
   ".gitignore":
-    comments: 
+    comments:
     reviewed_by: josh.pencheon
     safe_revision: fbc1cf349a296e3489e4b27b4de6c52222113926
   ".hound.yml":
-    comments: 
+    comments:
     reviewed_by: timgentry
     safe_revision: 1cf068b17559ed381e013fe71a481eb3db15f553
   ".rubocop.yml":
-    comments: 
+    comments:
     reviewed_by: ollietulloch
     safe_revision: b1aeb26ad5721337fc37605b11e2a4a859ebc1f7
   CHANGELOG.md:
     comments: Incorrectly bumped to v1.5.0 from v1.0.4 previously
-    reviewed_by: ollietulloch
-    safe_revision: dbd0e04b521511e49b7e5b004d1ca7e915867c09
+    reviewed_by: brian.shand
+    safe_revision: 7588de7db07a00898d52403141e69ab48aff2e15
   CODE_OF_CONDUCT.md:
-    comments: 
+    comments:
     reviewed_by: timgentry
     safe_revision: 065dcccb9db71374cea5aad104657a5c1f877d1c
   Gemfile:
-    comments: 
+    comments:
     reviewed_by: timgentry
     safe_revision: 065dcccb9db71374cea5aad104657a5c1f877d1c
   Guardfile:
-    comments: 
+    comments:
     reviewed_by: timgentry
     safe_revision: 2c3dd20879903b98f7f05d5d3e73b1478c275c93
   LICENSE.txt:
-    comments: 
-    reviewed_by: timgentry
-    safe_revision: 065dcccb9db71374cea5aad104657a5c1f877d1c
+    comments:
+    reviewed_by: brian.shand
+    safe_revision: f54b981e5232e49d3f5d691e015037f72e195614
   README.md:
-    comments: 
-    reviewed_by: josh.pencheon
-    safe_revision: b2ac2de6856884bdb1e0cb369b02d30c1fd64166
+    comments:
+    reviewed_by: brian.shand
+    safe_revision: f54b981e5232e49d3f5d691e015037f72e195614
   Rakefile:
-    comments: 
+    comments:
     reviewed_by: timgentry
     safe_revision: 2c3dd20879903b98f7f05d5d3e73b1478c275c93
   bin/console:
-    comments: 
+    comments:
     reviewed_by: timgentry
     safe_revision: fdea3ed4f37453978857611724116f70dd08f1fd
   bin/setup:
-    comments: 
+    comments:
     reviewed_by: timgentry
     safe_revision: 065dcccb9db71374cea5aad104657a5c1f877d1c
-  gemfiles/Gemfile.rails52:
-    comments: 
-    reviewed_by: josh.pencheon
-    safe_revision: 3316c8246806653c6ae3f50864b710dd76a064b3
-  gemfiles/Gemfile.rails60:
-    comments: 
-    reviewed_by: josh.pencheon
-    safe_revision: 8f52c0cbddb974f10eb4f8c3de06038aa95e3429
+  gemfiles/Gemfile.rails70:
+    comments:
+    reviewed_by: brian.shand
+    safe_revision: 7e540d871d2bfff07c156db50511338c8ed8bcba
+  gemfiles/Gemfile.rails71:
+    comments:
+    reviewed_by: brian.shand
+    safe_revision: 7588de7db07a00898d52403141e69ab48aff2e15
+  gemfiles/Gemfile.rails72:
+    comments:
+    reviewed_by: brian.shand
+    safe_revision: 7588de7db07a00898d52403141e69ab48aff2e15
+  gemfiles/Gemfile.rails80:
+    comments:
+    reviewed_by: brian.shand
+    safe_revision: 7588de7db07a00898d52403141e69ab48aff2e15
   lib/tnql.rb:
-    comments: 
-    reviewed_by: timgentry
-    safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
+    comments:
+    reviewed_by: brian.shand
+    safe_revision: 7588de7db07a00898d52403141e69ab48aff2e15
   lib/tnql/constants.rb:
-    comments: 
+    comments:
     reviewed_by: timgentry
     safe_revision: 2c3dd20879903b98f7f05d5d3e73b1478c275c93
   lib/tnql/grammars.rb:
-    comments: 
+    comments:
     reviewed_by: timgentry
     safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   lib/tnql/grammars/age.treetop:
@@ -151,142 +159,142 @@ file safety:
     reviewed_by: timgentry
     safe_revision: b3a8b33cbc5dd29822e0e6ded32500ccd7a15670
   lib/tnql/nodes.rb:
-    comments: 
+    comments:
     reviewed_by: timgentry
     safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   lib/tnql/nodes/age.rb:
-    comments: 
+    comments:
     reviewed_by: timgentry
     safe_revision: 2c3dd20879903b98f7f05d5d3e73b1478c275c93
   lib/tnql/nodes/batch_types.rb:
-    comments: 
+    comments:
     reviewed_by: timgentry
     safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   lib/tnql/nodes/dates.rb:
-    comments: 
+    comments:
     reviewed_by: timgentry
     safe_revision: 2c3dd20879903b98f7f05d5d3e73b1478c275c93
   lib/tnql/nodes/diagnosis.rb:
-    comments: 
+    comments:
     reviewed_by: timgentry
     safe_revision: 2c3dd20879903b98f7f05d5d3e73b1478c275c93
   lib/tnql/nodes/e_base_records.rb:
-    comments: 
+    comments:
     reviewed_by: timgentry
     safe_revision: 2c3dd20879903b98f7f05d5d3e73b1478c275c93
   lib/tnql/nodes/main.rb:
-    comments: 
+    comments:
     reviewed_by: timgentry
     safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   lib/tnql/nodes/patient.rb:
-    comments: 
+    comments:
     reviewed_by: timgentry
     safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   lib/tnql/nodes/provider.rb:
-    comments: 
+    comments:
     reviewed_by: timgentry
     safe_revision: 2c3dd20879903b98f7f05d5d3e73b1478c275c93
   lib/tnql/nodes/registration_status.rb:
-    comments: 
+    comments:
     reviewed_by: timgentry
     safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   lib/tnql/nodes/registry.rb:
-    comments: 
+    comments:
     reviewed_by: ollietulloch
     safe_revision: 96b9ba36a2da7246bff2f0a49cef0e1808ddb4e5
   lib/tnql/nodes/staging.rb:
-    comments: 
+    comments:
     reviewed_by: timgentry
     safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   lib/tnql/nodes/treatment.rb:
-    comments: 
+    comments:
     reviewed_by: timgentry
     safe_revision: 2c3dd20879903b98f7f05d5d3e73b1478c275c93
   lib/tnql/nodes/tumour_type.rb:
-    comments: 
+    comments:
     reviewed_by: timgentry
     safe_revision: 2c3dd20879903b98f7f05d5d3e73b1478c275c93
   lib/tnql/nodes/vital_status.rb:
-    comments: 
+    comments:
     reviewed_by: timgentry
     safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   lib/tnql/parser.rb:
-    comments: 
+    comments:
     reviewed_by: timgentry
     safe_revision: 40100d5f23601b0033ddcf0bd7a6367446066cc5
   lib/tnql/treetop/extensions.rb:
-    comments: 
+    comments:
     reviewed_by: timgentry
     safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   lib/tnql/version.rb:
     comments: Incorrectly bumped to v1.5.0 from v1.0.4 previously
-    reviewed_by: ollietulloch
-    safe_revision: dbd0e04b521511e49b7e5b004d1ca7e915867c09
+    reviewed_by: brian.shand
+    safe_revision: 1429e6a0f2c413231b2f1d1b881cf17402bdf537
   test/nodes/age_test.rb:
-    comments: 
+    comments:
     reviewed_by: timgentry
     safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   test/nodes/dates_test.rb:
-    comments: 
+    comments:
     reviewed_by: timgentry
     safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   test/nodes/diagnosis_test.rb:
-    comments: 
+    comments:
     reviewed_by: timgentry
     safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   test/nodes/e_base_records_test.rb:
-    comments: 
+    comments:
     reviewed_by: timgentry
     safe_revision: '0749ad008871e286c6e0450a733599f0c86ced5f'
   test/nodes/main_test.rb:
-    comments: 
+    comments:
     reviewed_by: timgentry
     safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   test/nodes/patient_test.rb:
-    comments: 
+    comments:
     reviewed_by: timgentry
     safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   test/nodes/provider_test.rb:
-    comments: 
+    comments:
     reviewed_by: timgentry
     safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   test/nodes/registration_status_test.rb:
-    comments: 
+    comments:
     reviewed_by: timgentry
     safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   test/nodes/registry_test.rb:
-    comments: 
+    comments:
     reviewed_by: ollietulloch
     safe_revision: 0ba6205a546963eb7e7387bea51f81e6b5485af8
   test/nodes/staging_test.rb:
-    comments: 
+    comments:
     reviewed_by: timgentry
     safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   test/nodes/treatment_test.rb:
-    comments: 
+    comments:
     reviewed_by: timgentry
     safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   test/nodes/tumour_type_test.rb:
-    comments: 
+    comments:
     reviewed_by: timgentry
     safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   test/nodes/vital_status_test.rb:
-    comments: 
+    comments:
     reviewed_by: timgentry
     safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   test/parser_test.rb:
-    comments: 
+    comments:
     reviewed_by: timgentry
     safe_revision: 40100d5f23601b0033ddcf0bd7a6367446066cc5
   test/test_helper.rb:
-    comments: 
+    comments:
     reviewed_by: timgentry
     safe_revision: 2c3dd20879903b98f7f05d5d3e73b1478c275c93
   test/tnql_test.rb:
-    comments: 
+    comments:
     reviewed_by: timgentry
     safe_revision: 61b0293f89d57118268e15fc49b529c64bbbe2b7
   tnql.gemspec:
-    comments: 
-    reviewed_by: ollietulloch
-    safe_revision: 14e059d904af19a4921a37b2949529b916d19b93
+    comments:
+    reviewed_by: brian.shand
+    safe_revision: 7588de7db07a00898d52403141e69ab48aff2e15
