@@ -2,6 +2,9 @@ lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'tnql/version'
 
+# We list development dependencies for all Rails versions here.
+# Rails version-specific dependencies can go in the relevant Gemfile.
+# rubocop:disable Gemspec/DevelopmentDependencies
 Gem::Specification.new do |spec|
   spec.name          = 'tnql'
   spec.version       = Tnql::VERSION
@@ -26,7 +29,9 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'activesupport', '>= 7.0', '< 8.1'
   spec.add_dependency 'chronic', '~> 0.3'
   spec.add_dependency 'ndr_support', '>= 3.0', '< 6'
-  spec.add_dependency 'treetop', '>= 1.4.10'
+  # treetop 1.6.14 causes errors. I think this may be a buggy release and fixed soon,
+  # but I'll restrict the version we use for now.
+  spec.add_dependency 'treetop', '~> 1.6.12', '< 1.6.14'
 
   spec.add_development_dependency 'bundler'
   spec.add_development_dependency 'guard'
@@ -38,3 +43,4 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake'
   spec.add_development_dependency 'terminal-notifier-guard' if RUBY_PLATFORM =~ /darwin/
 end
+# rubocop:enable Gemspec/DevelopmentDependencies
