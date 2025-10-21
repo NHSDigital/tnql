@@ -24,9 +24,9 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.required_ruby_version = '>= 3.1'
+  spec.required_ruby_version = '>= 3.2'
 
-  spec.add_dependency 'activesupport', '>= 7.0', '< 8.1'
+  spec.add_dependency 'activesupport', '>= 7.1', '< 8.1'
   spec.add_dependency 'chronic', '~> 0.3'
   spec.add_dependency 'ndr_support', '>= 3.0', '< 6'
   # treetop 1.6.14 causes errors. I think this may be a buggy release and fixed soon,
