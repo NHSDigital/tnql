@@ -2,7 +2,6 @@ $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 require 'tnql'
 
 require 'minitest/autorun'
-require 'minitest/unit'
 
 # Override the default Date#to_s format to ensure the formmating is right
 Date::DATE_FORMATS.update(default: '%d.%m.%Y')
