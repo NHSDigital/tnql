@@ -2,6 +2,7 @@
 ### Fixed
 * Restrict treetop gem dependency
 * Support Ruby 3.4. Drop support for Rails 7.0, Ruby 3.1
+* Support Ruby 4.0, Rails 8.1. Drop support for Ruby 3.2
 
 ## 1.1.2 / 2024-11-18
 ### Fixed
