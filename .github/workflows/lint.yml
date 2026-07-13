@@ -15,7 +15,7 @@ jobs:
     - name: Set up Ruby
       uses: ruby/setup-ruby@0dafeac902942906541bc140009cdbf32665b601 # ruby/setup-ruby@v1 see https://github.com/ruby/setup-ruby/tree/v1
       with:
-        ruby-version: 3.4
+        ruby-version: 4.0
     - name: Install dependencies
       run: bundle install
     - name: Run RuboCop against BASE..HEAD changes
